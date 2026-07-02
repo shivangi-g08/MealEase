@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Order Success - MealEase</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/success.css">
+
+</head>
+
+<body>
+
+<div class="success-container">
+
+  <h1>🎉 Order Placed Successfully!</h1>
+
+  <p>Your order ID:</p>
+<h2 id="orderId"></h2>
+
+<!-- ORDER DETAILS -->
+<div class="success-info">
+  <p><strong>Pickup Slot:</strong> <span id="pickupSlot"></span></p>
+  <p id="savedTime"></p>
+</div>
+
+<!-- QR -->
+<div id="qr"></div>
+
+  <!-- STATUS -->
+  <h3 id="status">Order Received</h3>
+
+  <p>
+Scan this QR at the canteen counter for quick pickup.
+No waiting in queues.
+</p>
+
+  <button class="btn" onclick="location.href='menu.html'">
+    Order More
+  </button>
+
+</div>
+
+<!-- QR LIBRARY -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/success.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - MealEase</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/login.css">
+
+</head>
+
+<body>
+
+<div class="auth-card">
+
+  <!-- BRAND -->
+  <div class="brand">
+    <img src="assets/Images/MEAL EASE LOGO.png" class="logo">
+    <h2 class="brand-name">MealEase</h2>
+  </div>
+
+  <!-- NAME -->
+  <div class="input-group">
+    <input type="text" id="name" placeholder="Full Name">
+    <div class="error" id="nameError"></div>
+  </div>
+
+  <!-- PHONE -->
+  <div class="input-group">
+    <input type="tel" 
+    id="phone" 
+    placeholder="Phone Number" 
+    maxlength="10"
+     inputmode="numeric"
+     oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+    >
+    <div class="error" id="phoneError"></div>
+  </div>
+
+  <!-- EMAIL -->
+  <div class="input-group">
+    <input type="email" id="email" placeholder="Email">
+    <div class="error" id="emailError"></div>
+  </div>
+
+  <!-- PASSWORD -->
+  <div class="input-group pass-box">
+    <input type="password" id="password" placeholder="Password">
+    <span class="toggle" onclick="togglePass()">Show</span>
+    <div class="error" id="passError"></div>
+  </div>
+
+  <!-- REMEMBER -->
+  <div class="remember">
+    <input type="checkbox" id="remember">
+    <label>Remember Me</label>
+  </div>
+
+  <!-- BUTTON -->
+  <button class="btn" onclick="login()">Login</button>
+
+  <!-- LINKS -->
+  <p class="link"><a href="#">Forgot Password?</a></p>
+  <p class="link">Don't have an account? <a href="signup.html">Sign up</a></p>
+
+</div>
+
+<!-- JS -->
+<script src="assets/js/login.js"></script>
+
+</body>
+
+
+</html>

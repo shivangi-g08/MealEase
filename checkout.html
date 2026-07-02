@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Checkout - MealEase</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/checkout.css">
+
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <h2 class="logo-text">MealEase</h2>
+  <a href="cart.html" class="back-link">← Back to Cart</a>
+   <button onclick="logout()" class="btn logout-btn">Logout</button>
+</nav>
+
+<!-- HEADER -->
+<section class="checkout-header">
+  <h1>Checkout</h1>
+  <p>Confirm your order and pickup time</p>
+</section>
+
+<!-- MAIN -->
+<div class="container checkout-layout">
+
+  <!-- LEFT -->
+  <div class="checkout-form">
+
+    <h2>Enter Details</h2>
+
+    <form id="orderForm">
+
+      <div class="checkout-note">Please confirm your details carefully. Your order will be ready for pickup at the selected time.</div>
+
+      <div class="input-group">
+        <label>Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="input-group">
+        <label>Phone Number</label>
+        <input 
+       type="tel" 
+       id="phone" 
+       placeholder="Enter phone number" 
+       maxlength="10"
+       inputmode="numeric"
+       oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+       required
+       >
+      </div>
+
+      <div class="input-group">
+        <label>Select Pickup Time</label>
+        <select id="time" required>
+          <option value="">Choose Time</option>
+          <option>12:00 PM</option>
+          <option>12:30 PM</option>
+          <option>1:00 PM</option>
+          <option>1:30 PM</option>
+        </select>
+      </div>
+
+      <button class="place-order-btn">Place Order →</button>
+
+    </form>
+
+  </div>
+
+  <!-- RIGHT -->
+  <div class="summary">
+
+    <h3>Order Summary</h3>
+    <div class="summary-meta">
+      <span id="itemCount">0 items</span>
+      <span id="summaryMessage">Review your order before placing.</span>
+    </div>
+
+    <div id="summaryItems" class="summary-items"></div>
+
+    <div class="summary-total">
+      <span>Total</span>
+      <span id="total">₹0</span>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- SUCCESS MESSAGE -->
+<div id="successBox" class="success-box hidden">
+  <h2>🎉 Order Placed!</h2>
+  <p>Your order is confirmed. Please collect it at your selected time.</p>
+</div>
+
+<script src="assets/js/auth.js"></script>
+<script src="assets/js/checkout.js"></script>
+
+</body>
+</html>

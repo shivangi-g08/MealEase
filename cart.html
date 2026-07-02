@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cart - MealEase</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/cart.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <h2 class="logo-text">MealEase</h2>
+  <a href="menu.html" class="back-link">← Back to Menu</a>
+    <button onclick="logout()" class="btn logout-btn">Logout</button>
+</nav>
+
+<!-- HEADER -->
+<section class="cart-header">
+  <h1>Your Cart</h1>
+  <p>Review your items before checkout</p>
+</section>
+
+<!-- MAIN -->
+<div class="container cart-layout">
+
+  <!-- LEFT -->
+  <div class="cart-left">
+    <div id="cartItems" class="cart-items"></div>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="cart-right">
+    <div class="summary">
+      <h3>Order Summary</h3>
+
+      <div class="summary-breakdown">
+        <div class="summary-line">
+          <span>Subtotal</span>
+          <span id="subtotal">₹0</span>
+        </div>
+
+        <div class="summary-line">
+          <span>Tax (5%)</span>
+          <span id="tax">₹0</span>
+        </div>
+
+        <div class="summary-line">
+          <span>Delivery</span>
+          <span class="free">Free</span>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="summary-total">
+        <span>Total Amount</span>
+        <span id="finalTotal">₹0</span>
+      </div>
+
+      <button class="checkout-btn" onclick="goCheckout()">Proceed to Checkout →</button>
+      <a href="menu.html" class="continue-shopping">Continue Shopping</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- EMPTY STATE -->
+<div id="emptyCart" class="empty-cart hidden">
+  <h2>Your cart is empty 🛒</h2>
+  <p>Add items from menu to continue</p>
+  <a href="menu.html" class="btn">Browse Menu</a>
+</div>
+
+<script src="assets/js/cart.js"></script>
+<script src="assets/js/auth.js"></script>
+
+</body>
+</html>

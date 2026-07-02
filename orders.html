@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Orders - MealEase</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/orders.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <h2 class="logo-text">MealEase</h2>
+  <a href="menu.html" class="back-link">← Back</a>
+    <button onclick="logout()" class="btn logout-btn">Logout</button>
+</nav>
+
+<!-- HEADER -->
+<section class="orders-header">
+  <h1>Your Orders</h1>
+  <p>Track and review your previous orders</p>
+</section>
+
+<!-- MAIN -->
+<div class="container">
+
+  <div id="ordersList" class="orders-list"></div>
+
+</div>
+
+</body>
+
+<script src="assets/js/orders.js"></script>
+<script src="assets/js/auth.js"></script>
+
+</html>

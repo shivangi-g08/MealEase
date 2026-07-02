@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MealEase</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/home.css">
+
+<!-- AOS -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- HERO SECTION -->
+<section class="hero-premium">
+  <div class="hero-decor"></div>
+  <!-- HERO NAV -->
+  <nav class="nav-glass">
+    <div class="logo">
+      <img src="assets/Images/MEAL EASE LOGO.png" alt="MealEase logo">
+      <span>MealEase</span>
+    </div>
+
+    <div class="nav-links">
+      <a href="#" class="active">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="cart.html">Cart</a>
+      <a href="orders.html">Orders</a>
+    </div>
+
+    <button class="nav-btn" onclick="handleOrderNow()">Order Now</button>
+  </nav>
+
+  <!-- HERO CONTENT -->
+  <div class="hero-container">
+
+    <!-- LEFT -->
+    <div class="hero-left">
+      <p class="badge">🎓 Smart Pre-Ordering for Students</p>
+       
+      <h1>
+        Skip the Queue.<br>
+        Eat <span>Smarter.</span>
+      </h1>
+
+      <p class="hero-sub">
+        Pre-order your meals, choose your time, and pick up instantly —
+        no waiting, no stress.
+      </p>
+
+      <div class="hero-buttons">
+        <button class="btn primary" onclick="handleOrderNow()">Order Now →</button>
+        <button class="btn outline" onclick="handleViewMenu()">View Menu</button>
+      </div>
+
+      <div class="hero-stats">
+        <div><strong>20+</strong>Meals</div>
+        <div><strong>15 Min</strong> Saved</div>
+        <div><strong>QR</strong> Pickup</div>
+      </div>
+
+      <p class="hero-small">
+        Built for college students to eliminate canteen queues and get meals faster.
+      </p>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="hero-right">
+
+      <div class="hero-visual">
+       <!--qr image-->
+        <img src="assets/Images/qr-pickup.png" class="hero-img">
+
+        <!-- floating tags -->
+        <div class="pill pill-1">⚡ Fast Pickup</div>
+        <div class="pill pill-2">⏱️ No Waiting</div>
+
+      </div>
+
+    </div>
+
+  </div>
+   <div class="hero-curve"></div>
+</section>
+
+<!-- ABOUT -->
+<section class="section container" data-aos="fade-up">
+
+  <div class="about glass">
+
+    <img src="assets/Images/MEAL EASE LOGO.png">
+
+    <div>
+      <h2>About MealEase</h2>
+      <p>
+        MealEase is a smart food pre-ordering system designed for students.
+        It reduces waiting time, avoids crowding, and enhances the campus dining experience.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FEATURES -->
+<section class="section gradient-section">
+
+  <div class="container">
+
+    <h2 data-aos="fade-up">Features</h2>
+
+    <div class="grid">
+
+      <div class="card" data-aos="zoom-in">
+        <h3>⚡ Fast Ordering</h3>
+        <p>No waiting in queues.</p>
+      </div>
+
+      <div class="card" data-aos="zoom-in">
+        <h3>📷 QR Pickup</h3>
+        <p>Scan and collect instantly.</p>
+      </div>
+
+      <div class="card" data-aos="zoom-in">
+        <h3>⏰ Time Slot</h3>
+        <p>Pick your preferred time.</p>
+      </div>
+
+      <div class="card" data-aos="zoom-in">
+      <h3>📊 Queue Reduction</h3>
+      <p>Distributes orders across time slots to reduce rush hours.</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="workflow-section">
+
+  <div class="workflow-container" data-aos="fade-up">
+
+    <h2>How MealEase Works</h2>
+
+    <p class="workflow-sub">
+      A simple 4-step process that makes ordering faster and smarter.
+    </p>
+
+    <div class="workflow-image">
+      <img src="assets/Images/demo-flow.png" alt="Workflow">
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- MENU -->
+<section class="section container">
+
+  <h2 data-aos="fade-up">Popular Items</h2>
+
+  <div class="menu-grid">
+
+    <div class="menu-card" data-aos="fade-up">
+      <img src="assets/Images/Aloo Paratha.jpg">
+      <div class="menu-info">
+        <h3>Aloo Paratha</h3>
+        <p>₹60</p>
+      </div>
+    </div>
+
+    <div class="menu-card" data-aos="fade-up">
+      <img src="assets/Images/Chole Rice.jpg">
+      <div class="menu-info">
+        <h3>Chole Rice</h3>
+        <p>₹80</p>
+      </div>
+    </div>
+
+    <div class="menu-card" data-aos="fade-up">
+      <img src="assets/Images/Milkshake.jpg">
+      <div class="menu-info">
+        <h3>Milkshake</h3>
+        <p>₹120</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CTA -->
+<section class="cta-premium">
+
+  <div class="cta-content">
+
+    <h2>Ready to Skip the Line?</h2>
+
+    <p class="cta-sub">
+      Pre-order your meals, choose your time slot, and pick up instantly.
+      No waiting. No crowd. Just smart ordering.
+    </p>
+
+    <div class="cta-buttons">
+      <button class="btn primary">Start Ordering →</button>
+      <button class="btn outline">View Menu</button>
+    </div>
+
+    <!-- FEATURES -->
+    <div class="cta-features">
+      <span>⚡ Fast Pickup</span>
+      <span>⏱️ No Waiting</span>
+      <span>📱 Easy Ordering</span>
+    </div>
+
+  </div>
+
+</section>
+
+<footer class="footer-premium">
+
+  <div class="footer-container">
+
+    <!-- BRAND -->
+    <div class="footer-col brand">
+      <h2>MealEase</h2>
+      <p class="tagline">Skip the queue. Eat smarter.</p>
+      <p class="desc">
+        MealEase helps students pre-order meals and pick them up instantly 
+        without waiting in long canteen lines.
+      </p>
+    </div>
+
+    <!-- LINKS -->
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="#">How It Works</a></li>
+      </ul>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li>📧 mealease@gmail.com</li>
+        <li>🏙️ Pune, India</li>
+      </ul>
+    </div>
+
+    <!-- CONNECT -->
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="https://github.com/shivangi-g08" target="_blank">💻 GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/shivangi-g08/" target="_blank">🔗 LinkedIn</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="footer-bottom">
+    <p>
+      © 2025-26 MealEase — Built for students by 
+      <a href="https://www.linkedin.com/in/shivangi-g08/" target="_blank" class="author">Shivangi Gupta</a>
+    </p>
+  </div>
+
+</footer>
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+  duration: 1000,
+  once: true
+});
+</script>
+
+<script>
+
+function handleOrderNow(){
+  const isLoggedIn = localStorage.getItem("loggedIn");
+
+  if(isLoggedIn){
+    window.location.href = "menu.html";
+  }else{
+    window.location.href = "login.html";
+  }
+}
+
+function handleViewMenu(){
+  window.location.href = "menu.html";
+}
+
+</script>
+
+</body>
+</html>
