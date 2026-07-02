@@ -24,7 +24,7 @@ MealEase is a smart canteen pre-ordering system designed for students. It allows
 
 ## 🚀 Live Demo
 
-meal-ease-five.vercel.app
+https://meal-ease-five.vercel.app/
 
 ## 👩‍💻 Developer
 
